@@ -46,8 +46,16 @@ html, body {
     grid-template-columns: 1fr;
     grid-template-rows: minmax(100px, auto);
     opacity: .85;
-   
-}
+ }
+ .textbox{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+ }
 header{
     grid-column: 1/2;
     grid-row: 1/2;

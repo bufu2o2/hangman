@@ -142,7 +142,7 @@ let game = {
         }
     },
 
-               //will let you know if you lose
+    //will let you know if you lose
     loseChecker: function(wordArr) {
         if(counter === 0){
         show();
