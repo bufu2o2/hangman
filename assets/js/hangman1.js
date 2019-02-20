@@ -26,6 +26,12 @@ let hide = () => {
       counter =5;
       document.getElementById("ctr").innerHTML = counter;
   }
+  let nogo = () => {
+      gameon = false;
+  }
+  let go = () => {
+      gameon = true;
+  }
 
   let refresh = () => {
       location.reload();
@@ -169,20 +175,24 @@ let game = {
 
 //Mode Setting
 let counter;
+let gameon;
 let heroNum = 5;
 let selectedWord = game.rws();
 let gameArray = game.underDisplay(selectedWord);
 let underscoreArray = gameArray[0];
 let wordArray = gameArray[1];
 game.rpf();
+nogo();
 
 
 
 
 document.onkeyup = function(e){
-    game.wrongLD(e, wordArray, underscoreArray);
-    game.winChecker(wordArray, underscoreArray);
-    game.loseChecker(wordArray);
-    //console.log(e.key);
-    //console.log(counter);
+    if(gameon){
+        game.wrongLD(e, wordArray, underscoreArray);
+        game.winChecker(wordArray, underscoreArray);
+        game.loseChecker(wordArray);
+        //console.log(e.key);
+        //console.log(counter);
+    }   
 }
