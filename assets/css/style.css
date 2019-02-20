@@ -1,0 +1,140 @@
+html, body {
+    color: white;
+    background-image: url("../img/superherobg2.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.container{
+    margin: 20px auto;
+    width: 800px;
+    height: 550px;
+    border: 5px inset lightblue;
+    border-radius: 3px;
+    background-color: black;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto);
+    opacity: .85;
+   
+}
+.container1{
+    margin: 20px auto;
+    width: 800px;
+    height: 550px;
+    border: 5px inset lightblue;
+    border-radius: 3px;
+    background-color: black;
+    display: none;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    position: relative;
+    opacity: .9;
+}
+.container2{
+    margin: 20px auto;
+    width: 800px;
+    height: 550px;
+    border: 5px inset lightblue;
+    border-radius: 3px;
+    background-color: black;
+    display: none;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(100px, auto);
+    opacity: .85;
+   
+}
+header{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: end;
+}
+h1{
+    text-align: center;
+    font-family: "Bungee Shade", cursive;
+    font-weight: 800;
+    font-size: 50;
+}
+h6{
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 20;
+}
+.mode{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: start;
+}
+.underscore{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    font-size: 75px;
+    /* background-color: aqua; */
+}
+.btn-outline-primary{
+    border: 1px steelblue solid;
+    border-bottom: 5px steelblue solid;
+    font-weight: 700;
+}
+.btn-outline-danger{
+    border: 1px crimson solid;
+    border-bottom: 5px crimson solid;
+    font-weight: 700;
+}
+.btn-outline-secondary{
+    border: 1px green solid;
+    border-bottom: 5px green solid;
+    font-weight: 700;
+}
+.middlecontainer{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    /* background-color: red; */
+}
+.hangman{
+    /* background-color: blue; */
+    grid-column: 1/1;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 10fr;
+}
+.wrongguesscontainer{
+    /* background-color: green; */
+    grid-column: 2/2;
+    display: grid;
+    grid-template-rows: 100px;
+}
+.counter{
+    /* background-color: pink; */
+    justify-self: center;
+    align-self: center;
+    font-size: 50px;
+}
+.wrongguess{
+    /* background-color: orange; */
+    justify-self: center;
+    align-self: center;
+    font-size: 60px;
+
+}
+.hangmanpic{
+    grid-row: 5;
+    /* background-color: black; */
+    justify-self: center;
+    height: 300px;
+}
